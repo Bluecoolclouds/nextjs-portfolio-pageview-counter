@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "HDMGroup.com",
-		template: "%s | HDMGroup.com",
+		default: "chronark.com",
+		template: "%s | chronark.com",
 	},
 	description: "Software engineer at upstash.com and founder of planetfall.io",
 	openGraph: {
-		title: "HDMGroup.com",
+		title: "chronark.com",
 		description:
 			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://HDMGroup.com",
-		siteName: "HDMGroup.com",
+		url: "https://chronark.com",
+		siteName: "chronark.com",
 		images: [
 			{
-				url: "https://HDMGroup.com/og.png",
+				url: "https://chronark.com/og.png",
 				width: 1920,
 				height: 1080,
 			},
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "HDMGroup",
+		title: "chronark",
 		card: "summary_large_image",
 	},
 	icons: {
