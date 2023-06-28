@@ -29,24 +29,36 @@ export default function Home() {
 				quantity={100}
 			/>
 			<h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-				hdmgroup
+				HDM Group
 			</h1>
+			<div className="my-4 text-center">
+		<h2 className="text-sm text-zinc-500">
+			Projects:
+		</h2>
+	</div>
+	<div className="my-4 text-center">
+		<h2 className="text-3xl text-transparent duration-1000 bg-white cursor-default sm:text-4xl md:text-6xl whitespace-nowrap bg-clip-text HDMGroup-edge-outline">
+			SMMAGENCY
+		</h2>
+		<h2 className="text-3xl text-transparent duration-1000 bg-white cursor-default sm:text-4xl md:text-6xl whitespace-nowrap bg-clip-text HDMGroup-edge-outline">
+			ASIA
+		</h2>
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 ">
-					Привет, my name is Andreas, I'm building serverless and open source
-					solutions at{" "}
+					Привет, здесь я держу свои проекты
+					Мой tg{" "}
 					<Link
 						target="_blank"
-						href="https://upstash.com"
+						href="https://t.me/Aqqtqqt"
 						className="underline duration-500 hover:text-zinc-300"
 					>
-						Upstash
+						Telegram
 					</Link>
 
 					<br />
-					and working on{" "}
+					работаю сейчас над{" "}
 					<Link
 						target="_blank"
 						href="https://planetfall.io"
