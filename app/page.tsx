@@ -2,16 +2,6 @@ import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
 
-const Button = () => {
-  const buttonStyle = {
-    padding: "10px 20px",
-    border: "2px solid",
-    borderRadius: "20px",
-    backgroundColor: "transparent",
-    color: "#000000",
-    cursor: "pointer",
-  };
-};
 const navigation = [
 	{ name: "Проекты", href: "/projects" },
 	{ name: "Контакты", href: "/contact" },
