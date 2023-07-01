@@ -3,7 +3,7 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-	{ name: "Проекты", href: "/projects" },
+	{ name: "Обновления", href: "/projects" },
 	{ name: "Контакты", href: "/contact" },
 ];
 
@@ -31,26 +31,28 @@ export default function Home() {
 			<h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
 				HDM Group
 			</h1>
-			<button
-      className="rounded-full px-4 py-2 bg-black text-white hover:bg-gray-700 transition-colors"
-    >
-      ЛОЛ
-    			</button>
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 ">
-					Привет, я Максим и здесь я собрал мои основные проекты
-					бизнес решений{" "}
-					<Link
+					Привет, здесь я собрал мои основные проекты
+					бизнес решений, которым вы можете доверять{" "}
+					{/*<Link
 						target="_blank"
 						href="https://t.me/Aqqtqqt"
 						className="underline duration-500 hover:text-zinc-300"
 					>
 						Telegram
-					</Link>
-
+					</Link>*/}
 					<br />
 				</h2>
+			</div>
+			<div className="flex flex-col items-center mt-1 animate-fade-in">
+				{/* Существующий элемент */}
+				<h3 className="text-lg text-white"></h3>
+				{/* Кнопка */}
+				<button className="rounded-full px-7 py-3 bg-black text-white hover:bg-gray-800 transition-colors">
+					SMMAGENCY
+				</button>
 			</div>
 		</div>
 	);
