@@ -3,8 +3,9 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-	{ name: "Обновления", href: "/projects" },
-	{ name: "Контакты", href: "/contact" },
+	{ name: "Мы знанимаемся:", href: "/projects" },
+	{ name: "Веб-разработкой", href: "/contact" },
+
 ];
 
 export default function Home() {
@@ -34,8 +35,19 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 ">
-					Привет, здесь я собрал мои основные проекты
-					бизнес решений, которым вы можете доверять{" "}
+					Делаем веб ресурсы для всех задач
+					{" "}
+					{/*<Link
+						target="_blank"
+						href="https://t.me/Aqqtqqt"
+						className="underline duration-500 hover:text-zinc-300"
+					>
+						Telegram
+					</Link>*/}
+					<br />
+				</h2>
+				<h2 className="text-sm text-zinc-500 ">
+					Оптимизируем под ваш бизнес так, чтобы клиенты остались довольны{" "}
 					{/*<Link
 						target="_blank"
 						href="https://t.me/Aqqtqqt"
@@ -50,9 +62,19 @@ export default function Home() {
 				{/* Существующий элемент */}
 				<h3 className="text-lg text-white"></h3>
 				{/* Кнопка */}
-				<button className="rounded-full px-7 py-3 bg-black text-white hover:bg-gray-800 transition-colors">
-					SMMAGENCY
-				</button>
+				<div className="flex">
+					<Link href="/projects" passHref>
+						<button className="rounded-full px-7 py-3 bg-black text-white hover:bg-gray-800 transition-colors">
+							Портфолио
+						</button>
+					</Link>
+					<Link href="/contact" passHref>
+						<button className="ml-4 rounded-full px-7 py-3 bg-black text-white hover:bg-gray-800 transition-colors">
+							Начать работать с нами
+						</button>
+					</Link>
+					{/* Добавьте другие кнопки по мере необходимости */}
+				</div>
 			</div>
 		</div>
 	);
