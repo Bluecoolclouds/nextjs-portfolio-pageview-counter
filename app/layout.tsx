@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 		default: "HDM Group",
 		template: "%s | HDM Group",
 	},
-	description: "Сделал бизнес решения. Перфоманс маркетинг, доставка с Китая",
+	description: "Мы занимаемся веб-разработкой, дизайном и оптимизация SEO.",
 	openGraph: {
 		title: "HDM Group",
 		description:
-			"Сделал бизнес решения. Перфоманс маркетинг, доставка с Китая",
+			"ы занимаемся веб-разработкой, дизайном и оптимизация SEO.",
 		url: "https://HDMGroup.com",
 		siteName: "HDMGroup.com",
 		images: [
