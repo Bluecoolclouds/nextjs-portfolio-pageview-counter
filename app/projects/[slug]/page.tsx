@@ -14,7 +14,13 @@ type Props = {
 	};
 };
 
-const redis = Redis.fromEnv();
+const redis = new Redis({
+	url: 'https://intense-whippet-48589.upstash.io',
+	token: 'Ab3NACQgYmJiNjRjNDYtYzljMC00ODY2LTljMzYtM2E0YmU2NzZlZjVjYTk3NjMzYTY0OTM1NDEzY2I5MDhkYjBhNmMzNTUyMTU=',
+})
+
+const data = await redis.set('foo', 'bar');
+
 
 export async function generateStaticParams(): Promise<Props["params"][]> {
 	return allProjects
