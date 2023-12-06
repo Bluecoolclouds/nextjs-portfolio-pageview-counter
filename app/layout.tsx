@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		siteName: "HDMGroup.com",
 		images: [
 			{
-				url: "https://chronark.com/og.png",
+				url: "/og.png",
 				width: 1920,
 				height: 1080,
 			},
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "chronark",
+		title: "HDM",
 		card: "summary_large_image",
 	},
 	icons: {
