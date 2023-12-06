@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "HDM Group",
 		description:
-			"ы занимаемся веб-разработкой, дизайном и оптимизация SEO.",
+			"Мы занимаемся веб-разработкой, дизайном и оптимизация SEO.",
 		url: "https://HDMGroup.com",
 		siteName: "HDMGroup.com",
 		images: [
