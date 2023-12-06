@@ -7,9 +7,9 @@ import { Card } from "../components/card";
 const socials = [
 	{
 		icon: <Instagram size={20} />,
-		href: "https://twitter.com/chronark_",
+		href: "https://instagram.com/hillcheugy911",
 		label: "Instagram",
-		handle: "@chronark_",
+		handle: "@hillcheugy911",
 	},
 	{
 		icon: <Mail size={20} />,
