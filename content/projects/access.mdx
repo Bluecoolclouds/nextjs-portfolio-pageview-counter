@@ -1,76 +1,37 @@
 ---
-title: "@chronark/access"
-description: A minimal library for access control. It is designed to be used together with opaque access tokens by providing a simple interface to define roles with different access permissions and verifying requests to resources.
-repository: chronark/access
-date: "2022-11-13"
+title: "Сити Про"
+description: Сайт для компании занимающейся покрасками
+date: "15.7.2023"
 published: true
   
 ---
-A minimal library for access control. It is designed to be used together with opaque access tokens by providing a simple interface to define roles with different access permissions and verifying requests to resources.
 
-- Fully typed
-- Zero dependencies
-- Serializable to store in a database
+[![](/city.png)](https://www.figma.com/file/vKmlDCUEkmJFC1qphloP7p/Сити-про-(Community)?type=design&node-id=0-1&mode=design&t=Vv8DL0yuQBVNEpxx-0) 
 
-## Install
 
-```sh-session
-npm i @chronark/access
-```
+## City Pro - Компания по покраскам
 
-## Usage
+### 1. Галерея Проектов и Сценарии
 
-```ts
-import { AccessControl, Role } from "@chronark/access";
+**Описание:**
+Мы усовершенствовали галерею проектов, добавив интересные сценарии реальных преобразований помещений с использованием покраски от City Pro. Каждый проект сопровождается описанием задач, решений и дополнительных деталей.
 
-/**
- * Define all your resources and their access patterns
- *
- * key => resource
- * value => array of access types
- */
-type Statements = {
-  user: ["read", "write", "dance"];
-  team: ["read", "write"];
-};
+### 2. Онлайн-Калькулятор Расходов
 
-/**
- * Create an access control instance and pass the Statements type to enjoy full
- * type safety
- */
-const ac = new AccessControl<Statements>();
+**Описание:**
+Внедрили удобный онлайн-калькулятор расходов для City Pro. Этот инструмент позволяет клиентам быстро и точно оценить предполагаемые расходы на услуги по покраске, основываясь на размерах помещения и выбранных опциях.
 
-/**
- * Now you can define one or more roles by specifying the access permissions
- *
- * This is already fully typed and typescript will let you know if you try to
- * use anything, that is not defined in the Statements type.
- */
-const role = ac.newRole({
-  user: ["read", "write"],
-  team: ["read"],
-});
+### 3. Современный Интерфейс Сайта
 
-/**
- * Simulate storing and retrieving the role in a database
- *
- * The idea here is, that you can store permissions alongside an API token.
- * Now, when you verify the token, you can also verify the access permissions.
- */
-const serialized = role.toString();
+**Описание:**
+Обновили дизайн веб-сайта City Pro, делая его более современным, стильным и функциональным. При этом сохранена четкая структура, облегчающая навигацию по всем разделам.
 
-/**
- * Note how you can pass in the Statements type again, to get full type safety
- */
-const recovered = Role.fromString<Statements>(serialized);
+### 4. Образовательный Контент
 
-/**
- * Validate the role by specifying the resource and the required access
- *
- * everything is fully typed
- */
-const res = recovered.authorize({"team", ["read"]});
+**Описание:**
+Разработали раздел с образовательным контентом, посвященным различным аспектам покраски. Клиенты могут получить ценные советы и инструкции от экспертов City Pro, что создает дополнительную ценность для посетителей сайта.
 
-// res.success => boolean
-// res.error => string | undefined provides a reason for failure
-```
+### 5. Усовершенствованная Система Обратной Связи
+
+**Описание:**
+Используя обратную связь клиентов, улучшили систему отзывов на сайте City Pro. Теперь клиенты могут оставлять более детальные и конструктивные отзывы, что помогает компании дорабатывать свои услуги с учетом пожеланий клиентов.
