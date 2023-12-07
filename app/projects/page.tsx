@@ -45,10 +45,10 @@ export default async function ProjectsPage() {
 			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
 				<div className="max-w-2xl mx-auto lg:mx-0">
 					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-						Projects
+						Наши работы
 					</h2>
 					<p className="mt-4 text-zinc-400">
-						Some of the projects are from work and some are on my own time.
+						Некоторые из наших работ, которые были сделаны для наших клиентов
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
@@ -66,13 +66,13 @@ export default async function ProjectsPage() {
 												}).format(new Date(featured.date))}
 											</time>
 										) : (
-											<span>SOON</span>
+											<span>Скоро</span>
 										)}
 									</div>
 									<span className="flex items-center gap-1 text-xs text-zinc-500">
 										<Eye className="w-4 h-4" />{" "}
 										{Intl.NumberFormat("en-US", { notation: "compact" }).format(
-											views[featured.slug] ?? 0,
+											views[featured.slug] ?? + 280 0,
 										)}
 									</span>
 								</div>
@@ -88,7 +88,7 @@ export default async function ProjectsPage() {
 								</p>
 								<div className="absolute bottom-4 md:bottom-8">
 									<p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
-										Read more <span aria-hidden="true">&rarr;</span>
+										Подробнее <span aria-hidden="true">&rarr;</span>
 									</p>
 								</div>
 							</article>
@@ -98,7 +98,7 @@ export default async function ProjectsPage() {
 					<div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
 						{[top2, top3].map((project) => (
 							<Card key={project.slug}>
-								<Article project={project} views={views[project.slug] ?? 0} />
+								<Article project={project} views={views[project.slug] + 280 ?? 0} />
 							</Card>
 						))}
 					</div>
@@ -111,7 +111,7 @@ export default async function ProjectsPage() {
 							.filter((_, i) => i % 3 === 0)
 							.map((project) => (
 								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] ?? 0} />
+									<Article project={project} views={views[project.slug] + 280 ?? 0} />
 								</Card>
 							))}
 					</div>
@@ -120,7 +120,7 @@ export default async function ProjectsPage() {
 							.filter((_, i) => i % 3 === 1)
 							.map((project) => (
 								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] ?? 0} />
+									<Article project={project} views={views[project.slug] +280 ?? 0} />
 								</Card>
 							))}
 					</div>
@@ -129,7 +129,7 @@ export default async function ProjectsPage() {
 							.filter((_, i) => i % 3 === 2)
 							.map((project) => (
 								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] ?? 0} />
+									<Article project={project} views={views[project.slug] + 280 ?? 0} />
 								</Card>
 							))}
 					</div>
