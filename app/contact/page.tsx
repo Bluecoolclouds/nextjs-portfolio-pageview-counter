@@ -13,15 +13,15 @@ const socials = [
 	},
 	{
 		icon: <Mail size={20} />,
-		href: "mailto:demaks2463@mail.ru",
+		href: "mailto:89033784036@mail.ru",
 		label: "Email",
-		handle: "demaks2463@mail.ru",
+		handle: "89033784036@mail.ru",
 	},
 	{
 		icon: <Contact2 size={20} />,
 		href: "https://t.me/gorlinh",
 		label: "Telegram",
-		handle: "Aqqtqqt",
+		handle: "@gorlinh",
 	},
 ];
 
