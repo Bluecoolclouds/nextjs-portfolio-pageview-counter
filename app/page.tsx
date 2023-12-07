@@ -6,7 +6,7 @@ const navigation = [
 	{ name: "Мы знанимаемся:", href: "/projects" },
 	{ name: "Веб-разработкой", href: "/contact" },
 
-];
+]; 
 
 export default function Home() {
 	return (
