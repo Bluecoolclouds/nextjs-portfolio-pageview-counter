@@ -120,7 +120,7 @@ export default async function ProjectsPage() {
 							.filter((_, i) => i % 3 === 1)
 							.map((project) => (
 								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] +280 ?? 0} />
+									<Article project={project} views={views[project.slug] + 280 ?? 0} />
 								</Card>
 							))}
 					</div>
