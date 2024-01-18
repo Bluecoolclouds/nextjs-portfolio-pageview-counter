@@ -1,46 +1,32 @@
 ---
-title: Vercel Terraform Provider
-description: A Terraform provider for Vercel. It has been deprecated it when Vercel rolled out their official provider.
-date: "2021-03-16"
-repository: chronark/terraform-provider-vercel
-url: https://registry.terraform.io/providers/chronark/vercel/latest
-published: false
+title: Компания Noodato - водные виды спорта
+description: Сделали современный простой сайт для продаж и ознакомления с компанией и товарами. Так же сделали автоворонку продаж и подробную характеристикой о пользователях
+date: "2023-12-16"
+published: true
 ---
 
 
+[![](/Noodato1.png)] 
 
-Back in the day when Vercel didn't have an official Terraform provider, I wrote one. 
-I needed to manage my Vercel projects and especially sync environment variables from different cloud providers.
-Terraform was great to provision some postgres databases on digital ocean, but there was no way to sync the credentials with Vercel.
+## Lights - Магазин светильников
 
-```hcl
-terraform {
-  required_providers {
-    vercel = {
-      source  = "registry.terraform.io/chronark/vercel"
-      version = ">=0.10.3"
-    }
-  }
-}
+### 1. Разработка интерактивного каталога
 
-provider "vercel" {
-  token = "<YOUR_TOKEN>"
-}
+**Описание:**
+Мы создали инновационный интерактивный каталог для Lights, который позволяет клиентам легко и удобно выбирать светильники. Интуитивный интерфейс, фильтры и подробные описания помогают покупателям быстро найти идеальное освещение для своего пространства.
 
-resource "vercel_project" "my_project" {
-  name = "project-via-terraform"
-  git_repository {
-    type = "github"
-    repo = "chronark/terraform-provider-vercel"
-  }
-}
-```
+### 2. Оптимизация веб-сайта для мобильных устройств
 
-It was a fun project and I learned a lot about Terraform and Vercel's API. 
-It gave me the opportunity to contribute to the Terraform ecosystem and my appreciation for the work that the Terraform team does is immense.
+**Описание:**
+Для увеличения доступности и удобства покупателей мы провели оптимизацию веб-сайта Lights для мобильных устройств. Теперь клиенты могут легко просматривать ассортимент светильников и совершать покупки с любого устройства.
 
-There have been quite a few individuals and teams that have used this provider and I am happy that it has been useful to you.
 
-Now that Vercel have stepped in, I have decided to [deprecate](https://twitter.com/chronark_/status/1517759708983177218) this one on April 23rd 2022. 
+### 3. Стратегия контента и SEO
 
-Please use the [official provider](https://registry.terraform.io/providers/vercel/vercel/latest) instead.
+**Описание:**
+Мы разработали и внедрили стратегию контента и SEO для Lights, улучшив видимость магазина в поисковых результатах. Это способствовало привлечению новых клиентов и увеличению продаж светильников.
+
+### 4. Интеграция системы онлайн-консультаций
+
+**Описание:**
+Чтобы обеспечить высокий уровень обслуживания клиентов, мы интегрировали систему онлайн-консультаций. Теперь покупатели могут получить экспертные советы и ответы на свои вопросы в реальном времени, что повысило удовлетворенность клиентов.
