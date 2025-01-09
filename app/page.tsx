@@ -65,7 +65,7 @@ export default function Home() {
 				<div className="flex">
 					<Link href="/projects" passHref>
 						<button className="rounded-full px-7 py-3 bg-black text-white hover:bg-gray-800 transition-colors">
-							Портфолио
+							Портфолио c7lk2ajyl220mo23
 						</button>
 					</Link>
 					<Link href="/contact" passHref>
